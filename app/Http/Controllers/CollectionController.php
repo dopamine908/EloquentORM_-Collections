@@ -23,4 +23,16 @@ class CollectionController extends Controller
          */
         dump($post);
     }
+
+    /**
+     * 自訂集合
+     */
+    public function createCollection() {
+        $post = Post::all();
+        /**
+         * 使用自定義collection的user1()方法
+         * 取得userid = 1 的post
+         */
+        dump($post->user1());
+    }
 }
