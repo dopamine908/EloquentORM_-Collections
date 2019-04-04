@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+|--------------------------------------------------------------------------
+| Collection 介紹
+|--------------------------------------------------------------------------
+*/
+Route::get('ThisIsCollection', 'CollectionController@ThisIsCollection');
